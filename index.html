@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/chart.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brevo</title>
+    <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+    <script>
+      // Version: 2.0
+      window.Brevo = window.Brevo || [];
+      Brevo.push([
+        "init",
+        {
+          client_key: "tz9lrj2g0z3c1f5thbscvks8",
+          // Optional: Add other initialization options, see documentation
+        },
+      ]);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
