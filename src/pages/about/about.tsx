@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 export const About = () => {
   useEffect(() => {
     if (window.Brevo) {
       window.Brevo.track("page", {
-        name: "About",
+        name: "About page",
       });
     }
   }, []);

@@ -1,51 +1,19 @@
-:root {
-  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: #333; /* Darker text for better readability */
-  background-color: #ffffff; /* White background for readability */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  --primary-color: #007bff; /* Blue for primary elements */
-  --secondary-color: #6c757d; /* Gray for secondary elements */
-  --background-color: #ffffff; /* Background color */
-  --text-color: #333; /* Text color */
-}
-
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  padding: 20px; /* Add some padding for better layout */
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primary-color);
-  margin: 0 0 10px;
-}
-
-p {
-  margin: 0 0 15px;
-  color: var(--text-color);
+h2 {
+  color: #444;
 }
 
 a {
-  color: var(--primary-color);
   text-decoration: none;
+  color: #007bff;
 }
 
 a:hover {
@@ -53,11 +21,61 @@ a:hover {
 }
 
 button {
-  background-color: var(--primary-color);
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+nav {
+  background-color: #007bff;
+  padding: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d1e7ff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.event-counters {
+  margin-top: 20px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
