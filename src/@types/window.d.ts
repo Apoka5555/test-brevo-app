@@ -5,6 +5,11 @@ type SendinblueAPI = {
     identifiers: Record<string, string>;
     attributes?: Record<string, unknown>;
   }) => void;
+  // @deprecated
+  trackLink: (
+    link: HTMLElement | null,
+    properties?: Record<string, unknown>
+  ) => void;
 };
 
 interface Window {

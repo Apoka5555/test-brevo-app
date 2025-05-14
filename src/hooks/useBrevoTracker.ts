@@ -18,11 +18,15 @@ const useBrevoTracker = () => {
     link: HTMLElement | null,
     properties: Record<string, unknown>
   ) => {
+    console.log("link", link);
+
     window.Brevo.push([
       "trackLink",
       link, // required
       properties, // optional
     ]);
+
+    // window.Brevo.trackLink(link, properties);
   };
 
   const customEvent = (
