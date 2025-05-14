@@ -12,7 +12,10 @@ export const Home = () => {
   }, []);
 
   const handleIdentify = () => {
-    identify("atussupov+test@cinemo.com", "Aby Tussupov");
+    identify("atussupov+test@cinemo.com", {
+      firstName: "Abylaikhan",
+      lastName: "Tussupov",
+    });
   };
 
   const handleCustomEvent = () => {
